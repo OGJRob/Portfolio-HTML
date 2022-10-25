@@ -1,8 +1,3 @@
-:root {
-    --primary-color: lightgray;
-    --secondary-color: skyblue;
-    
-
+body {
+    background-color: lightgray;
 }
-
-
