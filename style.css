@@ -1,28 +1,123 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: lightgray;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: blueviolet;
+    line-height: 1.5;
+}
+
+h1, h2, h3, p {
+    margin: 0;
 }
 
 header {
     padding: 10px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
+
 }
 
-h1 {
-    color: blueviolet;
-    font-size: 3em;
-    margin: 20px;
-}
-
-header ul {
-    display: flex;
-    padding: 10px;
-    gap: 50px;
+header h1 {
+    background-color: lightgray;
+    color: black;
+    font-size: 4vw;
     margin: 0;
+    padding: 5px 1% 5px 6%;
+    line-height: 1;
 }
 
-li {
-    list-style-type: none;
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
+nav a {
+    text-decoration: none;
+    padding: 5px 10px;
+    color: blueviolet;
+    margin-right: 10px;
+    font-size: 1.4rem;
+}
+
+main {
+    margin-top: 20px;
+    margin-bottom: 45px;
+}
+
+.page-wrapper {
+    max-width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page-section {
+    margin: 25px 0;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.page-section > h2 {
+    flex: 0 0 20%;
+    text-align: right;
+    padding-right: 15px;
+    border-right: 4px solid blueviolet;
+    font-size: 4vw;
+    line-height: 1.1;
+}
+
+.page-section > div {
+    flex: 0 0 77%;
+   }
+
+.page-section p {
+    margin-bottom: 20px
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+} 
+
+.flex-item {
+    border: 5px solid blueviolet;
+    /* background-color: white; */
+    color: blueviolet;
+    min-height: 150px;
+    max-height: 150px;
+    flex-basis: calc(50% - 1em);
+    display: flex;
+    align-items: flex-end;
+    padding: 0 0 20px 0;
+    margin: 0.5em;
+    text-decoration: none;
+    background-size: 150%;
+    font-size: 0.9rem;
+}
+
+.flex-item:first-child {
+    min-height: 400px;
+    flex-basis: 100%;
+}
+
+.work-one {
+    background-image: url("./Assets/Horiseon-Screenshot.PNG");
+}
+
+.flex-item div {
+    background-color: blueviolet;
+    color: lightgray;
+}

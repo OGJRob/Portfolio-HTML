@@ -3,7 +3,7 @@
     
 <head>
     <meta charset="UTF-8" />
-    <meta http-equiv=""X-UA-Compatible" content="IE-edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>John Robinson Portfolio</title>
     <link rel="stylesheet" href="style.css" />
@@ -12,46 +12,77 @@
     <header class="header">
         <h1>John Robinson</h1>
         <nav>
-            <ul>
-                <li>
-                    <a href="#about-me">About Me</a>
-                </li>
-                <li>   
-                    <a href="#work">Work</a>
-                </li> 
-                <li>
-                    <a href="#contact-me">Contact Me</a>
-                </li>
-            </ul>
+            <a href="#about-me">About Me</a>
+                  
+            <a href="#work">Work</a>
+                
+            <a href="#contact-me">Contact Me</a>
         </nav>
     </header>
-<main>
-    <section id="about-me" class="about">
+<main class="page-wrapper">
+    <section id="about-me" class="page-section">
         <h2>About Me</h2>  
+        <div>
         <p>
             Thank you for visiting my portfolio! My name is John Robinson and I am currently in school at Washington University 
             attending a Coding Bootcamp. I am hoping to expand on this portfolio as I gain more knowledge and experience so that
             I can use this for future endeavors.
         </p>
-        <img class="profile-pic" src="./Assets/School-Profile-Picture.jpg" alt="John ft Maya"
+        <img class="profile-pic" src="./Assets/School-Profile-Picture.jpg" alt="John ft Maya">
+        </div>
     </section>
     
-    <section id="work" class="work">
+    <section id="work" class="page-section">
         <h2>My Work</h2>
-        <nav class="Project1">
-            <h3>Horiseon Website Mock-Up</h3>
-                <a href="https://ogjrob.github.io/Horiseon-Website/"></a>
-                    <img class="Horiseon-Webpage" src="./Assets/Horiseon-Screenshot.PNG"
-        </nav>    
+        <div class="flex-container">
+            <a href="#" class="flex-item work-one">
+                <div>
+                    <h3>work-one</h3>
+                    <span>description</span>
+                </div>
+            </a>
+            <a href="#" class="flex-item work-two">
+                <div>
+                    <h3>work-one</h3>
+                    <span>description</span>
+                </div>
+            </a>
+            <a href="#" class="flex-item work-three">
+                <div>
+                    <h3>work-one</h3>
+                    <span>description</span>
+                </div>
+            </a>
+            <a href="#" class="flex-item work-four">
+                <div>
+                    <h3>work-one</h3>
+                    <span>description</span>
+                </div>
+            </a>
+            <a href="#" class="flex-item work-five">
+                <div>
+                    <h3>work-one</h3>
+                    <span>description</span>
+                </div>
+            </a>
+        </div>
+        <!-- <nav class="Project1">
+            <a href="https://ogjrob.github.io/Horiseon-Website/">Horiseon Website Mock-Up</a>
+                <img class="Horiseon-Webpage" src="./Assets/Horiseon-Screenshot.PNG" alt="Horiseon Demo">
+        </nav>     -->
     </section>
 
-    <section id="contact-me" class="contact">
+    <section id="contact-me" class="page-section">
         <h2>Contact Me</h2>
-        <a href="mailto: jtrobinson1919@gmail.com">Send me an email</a>
+        <div>
+            <address>
+                <a href="mailto: jtrobinson1919@gmail.com">Send me an email</a>
+            </address>
+        </div>
     </section>
     
 <footer>
-    <h4>Last Updated January 2023</h4>
+    <h4>Created by John Robinson</h4>
 </footer>
 
 </main>    
